@@ -108,8 +108,8 @@
 	}
 
 	&__list {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		display: flex;
+		justify-content: space-between;
 		gap: 2rem 0;
 	}
 
@@ -135,8 +135,8 @@
 	}
 
 	.nav4__list {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr) !important;
+		// display: flex;
+		// justify-content: space-between;
 		gap: 2rem 0;
 	}
 }
