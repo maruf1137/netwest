@@ -14,6 +14,16 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "RNHouseSansW01", sans-serif;
@@ -28,13 +38,17 @@ body {
   background-color: #fff;
 }
 
-.section,
-.footer {
+@media only screen and (max-width: 62em) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.section {
   padding: 5rem 0 !important;
 }
 @media only screen and (max-width: 62em) {
-  .section,
-.footer {
+  .section {
     padding: 4rem 0 !important;
   }
 }
@@ -52,17 +66,41 @@ h2.heading {
   line-height: 6.4rem;
   color: #42145f;
 }
+@media only screen and (max-width: 62em) {
+  h2.heading {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  h2.heading {
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+  }
+}
 
 h3.heading {
   font-size: 2.6rem;
   line-height: 3.8rem;
   color: #42145f;
 }
+@media only screen and (max-width: 62em) {
+  h3.heading {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+}
 
 h4 {
   font-size: 2.2rem;
   line-height: 3.2rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 62em) {
+  h4 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
 }
 
 h5 {
@@ -80,6 +118,11 @@ h6 {
   color: #333;
   font-weight: 400;
   font-family: "RNHouseSansW01", sans-serif;
+}
+@media only screen and (max-width: 62em) {
+  .text {
+    font-size: 1.6rem;
+  }
 }
 
 a:link,
@@ -1262,6 +1305,9 @@ button {
 .nav .nav3 {
   padding: 3rem 2rem 2rem 2rem;
 }
+.nav .nav3__list {
+  flex-wrap: wrap;
+}
 .nav .nav3__link {
   font-size: 1.4rem;
   border-bottom: 1px solid #1d7b8a;
@@ -1291,6 +1337,25 @@ button {
   border-bottom: 1px solid #1d7b8a;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 5000;
+  padding: 1.5rem;
+}
+.sticky .text {
+  display: none;
+}
+.sticky .nav4__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 2rem 0;
+}
+
 .header {
   background-color: #fbba20;
   padding: 5rem 0;
@@ -1300,11 +1365,21 @@ button {
   width: 100%;
   margin-left: 9rem;
 }
+@media only screen and (max-width: 62em) {
+  .header__content {
+    margin-left: 0;
+  }
+}
 
 .enargy-section .enargy {
   max-width: 66rem;
   width: 100%;
   margin-left: 9rem;
+}
+@media only screen and (max-width: 62em) {
+  .enargy-section .enargy {
+    margin-left: 0;
+  }
 }
 .enargy-section .enargy__accordion .accordion-item {
   border: none;
@@ -1335,6 +1410,10 @@ button {
 .enargy-section .enargy__accordion .accordion-body ul {
   list-style-type: square;
   margin-left: 2rem;
+}
+.enargy-section .enargy__accordion .accordion-body ul li {
+  font-size: 1.8rem;
+  list-style: square !important;
 }
 .enargy-section .enargy__accordion .accordion-body a {
   border-bottom: 1px solid #1d7b8a;
@@ -1385,6 +1464,158 @@ button {
 }
 .tips-section .tips__link {
   border-bottom: 1px solid #1d7b8a;
+}
+
+.room-section .room {
+  background-color: #42145f;
+  padding: 8rem 0 5rem 0;
+}
+.room-section .room__header {
+  background-color: #fbba20;
+  padding: 2rem;
+  margin-top: -12rem;
+  overflow-x: scroll;
+}
+@media only screen and (max-width: 35.9375em) {
+  .room-section .room__header {
+    padding: 2rem 1rem;
+  }
+}
+.room-section .room__header .gds-nav-tabs__list-item--active .gds-nav-tabs__link:before,
+.room-section .room__header .itm.gds-nav-tabs__link::before {
+  display: none;
+}
+.room-section .room__header .gds-nav-tabs__list-item--active .gds-nav-tabs__link {
+  color: #333;
+  text-shadow: none;
+  box-shadow: none;
+  z-index: 200;
+  height: auto;
+  top: 0;
+  font-weight: 600;
+}
+.room-section .room__header .gds-nav-tabs {
+  border-bottom: none;
+}
+.room-section .room__header .gds-nav-tabs--justified .gds-nav-tabs__list-item {
+  float: none;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  padding: 0 2px;
+}
+.room-section .room__header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+@media only screen and (max-width: 35.9375em) {
+  .room-section .room__header ul {
+    gap: 2rem;
+  }
+}
+.room-section .room__header ul li a {
+  font-size: 1.8rem;
+  padding: 0;
+  background-color: transparent;
+  font-weight: 400;
+  color: #333;
+  text-shadow: none;
+  box-shadow: none;
+  z-index: 200;
+  height: auto;
+}
+.room-section .room .gds-card,
+.room-section .room .gds-keyboard-shortcuts,
+.room-section .room .gds-leaderboard__topfive {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  color: #eee;
+  box-shadow: none;
+}
+.room-section .room .tester {
+  height: 200px;
+  width: 200px;
+}
+.room-section .room section {
+  min-height: 400px;
+}
+.room-section .room .tabs {
+  display: none;
+}
+.room-section .room .tabs__body {
+  display: flex;
+  align-items: start;
+  gap: 4rem;
+}
+.room-section .room .tabs__img {
+  height: 27rem;
+}
+.room-section .room .tabs__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 62em) {
+  .room-section .room .tabs__img {
+    display: none;
+  }
+}
+.room-section .room .tabs__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 4rem 2rem;
+  padding-top: 5rem;
+}
+.room-section .room .tabs__item h3 {
+  color: #fff;
+}
+.room-section .room .tabs__item .text {
+  color: #fff;
+}
+.room-section .room .active {
+  display: block;
+}
+
+.temperature-section .temperature {
+  display: grid;
+  grid-template-columns: 72rem 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+@media only screen and (max-width: 62em) {
+  .temperature-section .temperature {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.temperature-section .temperature__content {
+  max-width: 58rem;
+  width: 100%;
+}
+.temperature-section .temperature__img {
+  width: 20rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 62em) {
+  .temperature-section .temperature__img {
+    display: none;
+  }
+}
+.temperature-section .temperature__img img {
+  height: 100%;
+  width: 100%;
+}
+.temperature-section .inspired {
+  max-width: 58rem;
+}
+.temperature-section .inspired__btns .btn {
+  border: 1px solid #42145f;
+  border-radius: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

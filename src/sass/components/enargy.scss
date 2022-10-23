@@ -4,6 +4,10 @@
 		width: 100%;
 		margin-left: 9rem;
 
+		@media only screen and (max-width: $tab-land) {
+			margin-left: 0;
+		}
+
 		&__content {
 		}
 
@@ -42,6 +46,15 @@
 					ul {
 						list-style-type: square;
 						margin-left: 2rem;
+
+						li {
+							font-size: 1.8rem;
+							list-style: square !important;
+
+							@media only screen and (max-width: $mbl-land) {
+								// font-size: 1.8rem;
+							}
+						}
 					}
 
 					a {

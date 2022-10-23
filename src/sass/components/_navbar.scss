@@ -76,6 +76,7 @@
 		padding: 3rem 2rem 2rem 2rem;
 
 		&__list {
+			flex-wrap: wrap;
 		}
 
 		&__link {
@@ -114,5 +115,28 @@
 
 	&__link {
 		border-bottom: 1px solid $color-primary;
+	}
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $color-white;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	z-index: 5000;
+	padding: 1.5rem;
+	// width: 200rem;
+	// overflow-x: scroll;
+
+	.text {
+		display: none;
+	}
+
+	.nav4__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr) !important;
+		gap: 2rem 0;
 	}
 }
