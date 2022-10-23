@@ -1,0 +1,10 @@
+.header {
+	background-color: $color-secondary;
+	padding: 5rem 0;
+
+	&__content {
+		max-width: 75rem;
+		width: 100%;
+		margin-left: 9rem;
+	}
+}

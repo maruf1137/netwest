@@ -1,0 +1,129 @@
+h1.heading {
+	font-weight: 400;
+	font-size: 5.2rem;
+	line-height: 6.4rem;
+	color: $color-text;
+
+	// @media only screen and (max-width: $tab-land) {
+	// 	font-size: 4.5rem;
+	// }
+	// @media only screen and (max-width: $mbl-port) {
+	// 	font-size: 3.5rem;
+	// }
+}
+h2.heading {
+	font-weight: 400;
+	font-size: 5.2rem;
+	line-height: 6.4rem;
+	color: $color-text;
+
+	// @media only screen and (max-width: $tab-land) {
+	// 	font-size: 4rem;
+	// 	line-height: 6rem;
+	// }
+}
+
+h3.heading {
+	font-size: 2.6rem;
+	line-height: 3.8rem;
+	color: $color-text;
+
+	// @media only screen and (max-width: $tab-port) {
+	// 	font-size: 3.2rem;
+	// 	line-height: 4.4rem;
+	// }
+	// @media only screen and (max-width: $mbl-land) {
+	// 	font-size: 2.6rem;
+	// 	line-height: 3.4rem;
+	// }
+}
+
+h4 {
+	font-size: 2.2rem;
+	line-height: 3.2rem;
+	font-weight: 400;
+}
+
+h5 {
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+.text {
+	font-size: 1.8rem;
+	color: #333;
+	font-weight: 400;
+	font-family: $font-primary;
+}
+
+a:link,
+a:visited {
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-decoration: none;
+	color: $color-primary;
+	// border-bottom: 1px solid $color-primary;
+	// background-image: linear-gradient(transparent calc(100% - 1px), #1d7b8a 10px, #1d7b8a);
+	// background-repeat: no-repeat;
+	// background-size: 100% 100%;
+}
+
+// Typography utils
+
+.bold {
+	font-weight: 700;
+}
+
+.center {
+	text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+.icon {
+	height: 3rem;
+	width: 3rem;
+	fill: $color-white;
+}
+
+.white {
+	color: $color-white !important;
+}
+.black {
+	color: $color-black !important;
+}
+.primary-color {
+	color: $color-primary !important;
+}
+
+@mixin pos-center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin img-size {
+	height: 100%;
+	width: 100%;
+}
+
+@mixin icon-vector {
+	height: 2rem;
+	width: 2rem;
+}

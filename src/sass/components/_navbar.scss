@@ -1,0 +1,118 @@
+.nav {
+	padding: 0;
+
+	.nav1 {
+		background-color: #42145f;
+
+		&__list {
+			margin-left: 17rem;
+		}
+
+		&__item {
+			padding: 1.2rem 2rem;
+		}
+
+		&__item.active {
+			background-color: $color-white;
+
+			a {
+				color: #333;
+			}
+		}
+
+		&__link {
+			color: $color-white;
+			// border-bottom: none;
+			padding: 1.2rem 2rem;
+			font-size: 1.4rem;
+		}
+
+		.btn {
+			padding: 0 2rem;
+			border: none;
+			outline: none;
+			color: $color-white;
+			font-size: 1.4rem;
+		}
+	}
+
+	.nav2 {
+		border-bottom: 1px solid #b7b7b7;
+
+		&__logo {
+			padding: 2rem;
+			height: 6rem;
+
+			img {
+				@include img-size;
+			}
+		}
+
+		&__list {
+		}
+
+		&__link {
+			font-size: 1.4rem;
+		}
+
+		&__form {
+			border: 2px solid #009fac;
+			margin-right: 2rem;
+
+			input {
+				border: none;
+				outline: none;
+				padding: 0.6rem 1rem;
+				font-size: 1.4rem;
+			}
+			i {
+				padding-right: 1rem;
+				color: $color-primary;
+			}
+		}
+	}
+
+	.nav3 {
+		padding: 3rem 2rem 2rem 2rem;
+
+		&__list {
+		}
+
+		&__link {
+			font-size: 1.4rem;
+			// color: $color-white;
+			border-bottom: 1px solid $color-primary;
+		}
+
+		.active {
+			color: #333;
+			border-bottom: none;
+		}
+
+		.right-icon {
+			i {
+				font-size: 1.4rem;
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+.nav4 {
+	background-color: #f5f5f5;
+	padding: 3rem 0;
+
+	.text {
+		color: $color-text;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem 0;
+	}
+
+	&__link {
+		border-bottom: 1px solid $color-primary;
+	}
+}

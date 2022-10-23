@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	// list-style: none;
+	text-decoration: none;
+	outline: none;
+	text-transform: capitalize;
+}
+// ::selection {
+// 	background: $color-text;
+// 	color: #fff;
+// }
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+
+	// @media only screen and (max-width: $laptop-land) {
+	// 	font-size: 55%;
+	// }
+}
+
+body {
+	font-family: $font-primary;
+	font-size: 18px;
+	line-height: 26px;
+	color: #333;
+	letter-spacing: 0.2px;
+	overflow-x: hidden;
+}
+
+.main {
+	background-color: $color-white;
+}
+
+.container {
+	// @media only screen and (max-width: 93.75em) {
+	// 	padding: 0 2rem;
+	// }
+}
+
+.section,
+.footer {
+	padding: 5rem 0 !important;
+
+	@media only screen and (max-width: $tab-land) {
+		padding: 4rem 0 !important;
+	}
+}
